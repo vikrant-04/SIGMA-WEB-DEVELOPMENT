@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css transform</title>
+    <style>
+        .container{
+            border: 2px solid tomato;
+            width: 100vw;
+            height: 80vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid teal;
+            border-width: 2px 0px 2px 2px ;
+            width: 50px;
+            height: 50px;
+            /* moves the element from its current positon */
+            transform: translate(20px,20px) rotate(180deg);
+            transform: scale(1,2);
+            
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">7</div>
+    </div>
+</body>
+</html>

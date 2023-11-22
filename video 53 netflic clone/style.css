@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+body{
+    width: 100%;
+    background-color: black;
+}
+.main{
+    background-image: url(assets/images/background-image.jpg);
+    width: 100vw;
+    height:90vh;
+    /* background-position: center center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.main .box{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+    background-color: black;
+    opacity: .5;
+    
+}
+.logo img{
+    width: 150px;
+    z-index: 10;
+   
+
+}
+.nav-bar{
+    position: relative;
+    z-index:1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    gap: 20vw;
+}
+.right{
+    display: flex;
+    gap: 20px;
+}
+.button{
+    width: 80px;
+    height: 30px;
+    border-radius: 6px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    border: none;
+}
+.button1{
+   background: inherit;
+    color:white;
+    font-weight: bold;
+    border: 1px solid rgba(255,255,255, 0.5);
+    
+}
+.button2{
+    background-color: rgb(229,9,20);
+    color: white;
+    font-weight: bold;
+
+}
+.content{
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    width: 100vw;
+    height: calc(100% - 80px);
+    display: flex;
+    text-align: center ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+    color: white;
+    gap: 20px;
+}
+.content1{
+    font-size: 48px;
+    font-weight: 900;
+}
+.content2{
+    font: 400 ;
+    font-size: 24px;
+}
+.content3{
+    font: 400 ;
+    font-size: 20px;
+}
+
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+.input-mail::placeholder{
+    color: white;
+}
+.input-mail{
+    border: 1px solid rgb(123, 123, 123);
+    border-radius: 4px;
+    padding: 0px 10px;
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    height: 50px;
+    background: inherit;
+    background-color: black;
+    opacity: .6;
+}
+
+.hit{
+    height: 50px;
+    width: 200px;
+    background-color: rgb(229,9,20);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+.seperation{
+    width: 100vw;
+    height: 8px;
+    background-color: rgb(43, 43, 43);
+    
+}
+.first{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    color: white;
+    max-width: 70vw;
+    margin: auto;
+}
+.first-image{
+    width: 35vw;
+    /* background : url(assets/videos/video-tv-in-0819.m4v); */
+
+}
+
+    .first .text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+    }

@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and obeject cover</title>
+    <style>
+        .container{
+            background-color: teal;
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+        }
+        img{
+            width: 300px;
+            height: 300px;
+            /* object-fit: contain;  */
+            /*this will cover the height or width by maintaining the aspect ratio of the image */
+
+            /* object-fit: fill; is by default */
+            object-fit: cover;
+            object-position: left top;
+
+        }
+
+        /* now if we wanna set the background a image */
+        .box{
+            background-image: url(https://imgs.search.brave.com/d-UiZQU9W9FhAAEzdCTOFpkzf9KvD8jvPjV3gZP20wE/rs:fit:560:320:1/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9iL2I2L0lt/YWdlX2NyZWF0ZWRf/d2l0aF9hX21vYmls/ZV9waG9uZS5wbmcv/NjQwcHgtSW1hZ2Vf/Y3JlYXRlZF93aXRo/X2FfbW9iaWxlX3Bo/b25lLnBuZw);
+            border: 2px solid blue;
+            width: 500px;
+            height: 500px;
+            background-position: center center;
+            background-repeat: no-repeat;
+
+            /* image start to repeat in the background if the width and height is more than the width and height of the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/Untz9IPAq0oiUcfN8fk7HLba5S-y5zmEOXfDG5xp1zk/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE0/NDQ3MDM2ODY5ODEt/YTNhYmJjNGQ0ZmUz/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4T0h4OGNH/bGpkSFZ5Wlh4bGJu/d3dmSHd3Zkh4OE1B/PT0.jpeg" alt="">
+    </div>
+    <div class="box"></div>
+</body>
+</html>

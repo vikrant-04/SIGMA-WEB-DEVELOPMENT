@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ultra Edit</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .right {
+        display: flex;
+        gap: 20px;
+      }
+
+      .image {
+        margin: 20px;
+        width: 130px;
+      }
+      .item {
+        display: flex;
+        width: 60px;
+        padding: 5px;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+      }
+      .arrow {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 5px 5px 0;
+        border-color: black transparent transparent transparent;
+        margin-left: 5px;
+        margin-top: 8px;
+      }
+      .link {
+        width: 150px;
+        height: 80px;
+        background-color: rgb(249, 249, 249);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .heading {
+        font-size: small;
+        font-weight: bold;
+        text-align: center;
+        
+      }
+      .sub-heading {
+        margin-bottom: 5px;;
+        font-size:7px;
+        text-align: center;    
+      }
+
+      .download-link {
+        display: flex;
+        justify-content: center;
+        font-size: xx-small;
+        gap: 12px;
+      }
+      .link1 {
+        background-color: rgb(9, 166, 189);
+        color: white;
+        font-weight: bold;
+        font-size: 7px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+
+      .link2 {
+        background-color: rgb(129, 199, 128);
+        color: white;
+        font-weight: bold;
+        font-size: 7px;
+        padding: 5px;
+        border-radius: 5px;
+      }
+      .links{
+        margin-left: 10vw;;
+        display: grid;
+        grid-template-rows: 100px 100px 100px;
+        grid-template-columns: 170px 170px 170px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="logo">
+            <img class="image" src="Dark-logo.png" alt="ultra edit logo" />
+          </div>
+          <div class="right">
+            <div class="item">
+              <span>Products </span
+              ><img width="10px" src="down-arrow-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="item">
+              <span>Pricing </span
+              ><img width="10px" src="down-arrow-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="item">
+              <span>Resources </span
+              ><img width="10px" src="down-arrow-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="item">
+              <span>AboutUs </span
+              ><img width="10px" src="down-arrow-svgrepo-com.svg" alt="" />
+            </div>
+            <div class="lang-logo item">
+              <img src="icons8-language-30.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="links">
+        <div class="link">
+          <span class="heading">
+            <p>English</p>
+          </span>
+          
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+            <p class="heading">Deutsch</p>
+            <p class="sub-heading">German</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>Italiano</p>
+          </span>
+          <p class="sub-heading">Italian</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>Español</p>
+          </span>
+          <p class="sub-heading">Spanish</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>français</p>
+          </span>
+          <p class="sub-heading">French</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>Português brasileiro </p>
+          </span>
+          <p class="sub-heading">Brazilian Portuguese
+        </p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>日本</p>
+          </span>
+          <p class="sub-heading">Japanese</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>한국어 </p>
+          </span>
+          <p class="sub-heading">Korean</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>中国</p>
+          </span>
+          <p class="sub-heading">Chinese</p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+        <div class="link">
+          <span class="heading">
+            <p>中國</p>
+          </span>
+          <p class="sub-heading">Traditional Chinese
+        </p>
+          <div class="download-link">
+            <div class="link1">Download-32bit</div>
+            <div class="link2">Download-64bit</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

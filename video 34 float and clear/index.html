@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css float and clear</title>
+    <style>
+        .box{
+            border: 2px solid grey;
+            display: flow-root;
+        }
+        .s_box{
+            border: 2px solid blue
+        }
+        .box>img{
+            float: right;
+            
+        }
+        .box :nth-child(3){
+            clear:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://cdn.mos.cms.futurecdn.net/ntFmJUZ8tw3ULD3tkBaAtf.jpg" width="300px">
+        <div class="s_box">
+            hello i am a div
+        </div>
+        <div class="s_box">
+             <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem assumenda earum in iure
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat esse officiis quaerat, debitis culpa, natus, quos et molestiae quibusdam inventore tempora nisi architecto non necessitatibus quae. Eius repellat eos officiis eligendi reprehenderit, alias labore molestias harum delectus, sequi exercitationem magnam illum tempore ipsum aperiam quasi facilis debitis error quibusdam velit saepe dignissimos? Perferendis neque dolorem est maiores. Corporis officiis aperiam magnam, temporibus, magni minus ex dolore provident officia nesciunt earum alias, inventore commodi illo autem eligendi ad ipsum expedita exercitationem iste sint. Dolorum, esse. Modi quam odio ipsum, expedita placeat eaque necessitatibus, eius quisquam nemo optio quibusdam voluptate minima! 
+             </p>
+        </div>
+        <div class="s_box">hello i am also a div</div>
+    </div>
+</body>
+</html>

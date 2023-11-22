@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+</head>
+<style>
+    :root{
+        --nav_color:tan;
+        --nav_hover_color:teal;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+   nav ul{
+    display: flex;
+    width: 100vw;
+
+    }
+    li{
+        flex:1;
+        background-color:var(--nav_color);
+        list-style: none;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+        color: var(--nav_hover_color);
+    }
+    li:hover{
+        background-color:var(--nav_hover_color);
+        color: var(--nav_color);
+        }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>C++</li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 1px solid blue;
+            background-color: aqua;
+            /* px does not care about the size of the screen size so here it covers full width i.e 1366 in this case */
+            /* width: 1366px; */
+
+            /* it automatically sets the margin of left and right same due to margin : auto property as Also note margin auto will only center the block elements not the inline elements  */
+
+            margin :auto;
+            width : 80vw;
+            height: 10vh;
+        }
+
+        .box > p{
+            border: 1px solid purple;
+            box-sizing: border-box;
+            font-size: 1.3rem;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 1px solid black;
+            background-color: aqua;
+            margin: 20px auto;
+            width: 80vw;
+            min-height: 80vh;
+        }
+        .container >div{
+            border:1px solid black;
+            width: 50%;
+        }
+        .container >div>div{
+            border:1px solid black;
+            width: 50%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="box">hello i am a div
+        <p>hello i am paragraph in this dev</p>
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt aliquam eum, eaque tempora, numquam minima, et nihil quis perferendis eius provident iste culpa quidem sit debitis quod ex iusto ipsum.
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nihil accusamus veritatis ipsam ipsa quod similique molestias iusto,</div>
+        </div>
+    
+</div>
+
+</body>
+</html>

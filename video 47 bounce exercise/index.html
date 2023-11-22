@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bounce</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: teal;
+        }
+        .ball{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 40px;
+            height: 40px;
+            border-radius: 70px;
+            background-color: tan;
+            animation: y-axis 1s ease-out infinite alternate,
+                       x-axis 3s linear infinite;
+        }
+        @keyframes y-axis {
+          from{
+            transform: translateY(0px);
+          }
+          to{
+            transform: translateY(-200px);
+          }
+        
+        }
+        @keyframes x-axis {
+            from {
+                left: 0%;
+            }
+            to {
+               left: 100%;
+            } 
+            /*
+            from{
+            transform: translateX(0px);
+          }
+          to{
+            transform: translateX(300px);
+          }*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

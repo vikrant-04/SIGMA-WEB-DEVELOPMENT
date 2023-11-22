@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    :root{
+        --color:violet;
+        --seccolor:pink;
+    }
+    .nav{
+    }
+    .nav ul{
+        background-color: var(--seccolor);
+        list-style: none;
+        display: flex
+    }
+    .nav ul li{
+        background-color : var(--color);
+        padding: 10px;
+        border: 2px solid var(--seccolor);
+    }
+    .content{
+        --seccolor:rgb(231, 52, 82);
+        /* ; this is the local variable and it will override the --seccolor  */
+        background-color: var(--seccolor);
+    }
+</style>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="content">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cupiditate ad minus asperiores alias dolores molestiae nobis vero nostrum architecto eaque ut quae, provident excepturi ea assumenda. Iure debitis officiis dolorem. Cumque, animi quidem accusantium debitis hic ipsa! Amet facilis laboriosam consectetur excepturi deserunt laudantium.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

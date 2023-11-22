@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* element selector */
+
+        div{
+            background-color: aqua;
+        }
+        /* class selector */
+        .yellow{
+            background-color: yellow;
+        }
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div>p{
+            background-color: pink;
+        }
+        /* descendent selector */
+        /* it does not care where the child it direct inside or not it will make the change */
+        div p{
+            background-color: blue;
+        }
+        /* universal selector */
+        * {
+            margin : 0;
+            padding : 0;
+        }
+
+        a:visited{
+            color: yellow;
+        }
+        a:active{
+            color: pink;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        p:first-child{
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        hello i am a div
+        <p>hello i am paragraph</p>
+        <p>hello i am second paragraph</p>
+        <article>
+            <p>helllo i am inside article i mean inside div but not directly into div</p>
+        </article>
+    </div>
+    <div id ="green">hello i am second div</div>
+    <div class="yellow">hello i am third div</div>
+    <a href="http://www.leetcode.com">leetcode</a>
+</body>
+</html>

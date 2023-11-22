@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectors</title>
+    <style>
+        /* it will target the box only if it is the first child */
+        .box:first-child{
+            color: yellow;
+        }
+        /* it will target the first line all the box class element8 */ 
+        .box::first-line{ 
+            background-color: red;
+        }
+        /* we can also target more than one element at one time using comma
+        add indexing is done from 1,2,.... */
+        p,.box:nth-child(1){
+            border: 2px solid aqua;
+        }
+        /* we can also do something like even and odd */
+        p,.box:nth-child(odd){
+            border: 2px solid aqua;
+        }
+        /* we can also dynamically add elements using css */
+
+        .boxes::before{
+            content: "this wil be put dynamically before the main contenet of the boxes";
+        }
+        .boxes::after{
+            content: "this will be put dynamically after the main content of the boxes";
+        }
+/* 
+        this is used when we selec anything in the webpage using our cursor */
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+
+        .box::first-letter{
+        font-size: 45px;
+        color: peru;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa recusandae corrupti iure incidunt cumque hic quaerat minus nostrum laudantium temporibus doloribus blanditiis atque perferendis rerum pariatur modi facilis beatae officiis dicta illo voluptate, dolores magni explicabo. Veritatis voluptas ducimus quibusdam doloribus, dolores esse! Rem fuga laudantium natus ipsa odio veritatis nobis quia voluptatibus provident impedit doloribus, ab sit distinctio iste obcaecati nam modi, aperiam molestias perferendis numquam voluptate! Vel omnis, dolorem fuga odit molestiae totam neque quasi, eum animi provident quibusdam, deleniti ducimus? Mollitia incidunt eligendi magni dolore vel iste, atque excepturi! Hic in nisi accusantium alias nam veniam labore!</div>
+        <div class="box">i am box 2</div>
+        <div class="box">i am box 3</div>
+    </div>
+    <p> this is a paragraph</p>
+</body>
+</html>
