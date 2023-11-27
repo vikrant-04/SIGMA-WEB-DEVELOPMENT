@@ -13,8 +13,9 @@ let obj={
     "/":"**"
 }
 if(r<0.1){
-    console.log(`the answer is ${`${a}  ${o} ${b}`}`);
+    console.log(`the answer is ${eval(`${a} ${o} ${b}`)}`);
 }
 else{
-    console.log(`the answer is ${`${a}  ${o} ${b}`}`);
+    o=obj[o];
+    console.log(`the answer is ${eval(`${a} ${o} ${b}`)}`);
 }
